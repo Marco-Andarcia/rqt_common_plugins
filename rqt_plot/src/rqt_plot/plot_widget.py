@@ -314,3 +314,15 @@ class PlotWidget(QWidget):
             self._update_plot_timer.start(self._redraw_interval)
         else:
             self._update_plot_timer.stop()
+
+    def auto_scale_x(self,enabled=True):
+        if enabled:
+            qWarning('PlotWidget.auto_scale_x enabled')
+        else:
+            qWarning('PlotWidget.auto_scale_x disabled')
+
+    def auto_scale_y(self,enabled=True):
+        if enabled:
+            qWarning('PlotWidget.auto_scale_y enabled')
+        else:
+            qWarning('PlotWidget.auto_scale_y disabled')

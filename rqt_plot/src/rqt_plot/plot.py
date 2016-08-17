@@ -141,3 +141,7 @@ class Plot(Plugin):
 
     def shutdown_plugin(self):
         self._widget.clean_up_subscribers()
+
+    def autoscale_switch(self, x_auto_scale=False, y_auto_scale=True):
+        if x_auto_scale == True:
+            self._data_plot.set_autoscale(x=True)
